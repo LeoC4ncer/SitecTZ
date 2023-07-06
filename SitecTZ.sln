@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SitecTZ", "SitecTZ\SitecTZ.csproj", "{FCD3B416-7A73-4253-AE0F-5613E831C778}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCD3B416-7A73-4253-AE0F-5613E831C778}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCD3B416-7A73-4253-AE0F-5613E831C778}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCD3B416-7A73-4253-AE0F-5613E831C778}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCD3B416-7A73-4253-AE0F-5613E831C778}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {80DE89F4-0B2C-42B5-8CD6-E5BC6A3B9943}
+	EndGlobalSection
+EndGlobal
