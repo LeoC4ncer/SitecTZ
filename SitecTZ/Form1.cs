@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using System.Text.RegularExpressions;
 using System.Windows.Forms.Design;
+using System.Xml.Linq;
 
 namespace SitecTZ
 {
@@ -33,24 +34,20 @@ namespace SitecTZ
                     else
                         numberOfRKK++;
 
-                    Regex regex1 = new Regex(@"\w+\s\w\.\w\.\s\(Отв\.\)");
-
-                    Match match = regex1.Match(line);
-
-                    if (match.Success)
+                    int tabIndex = line.IndexOf('\t');
+                    string superVisor = line.Substring(0, tabIndex);
+                    if (superVisor.Equals("Климов Сергей Александрович"))
                     {
-                        initials = (match.Value).Substring(0, (match.Value).Length - 7);
+                        Regex regex = new Regex(@"\w+\s\w\.\w\.");
 
+                        Match match = regex.Match(line);
+                        initials = match.Value.Trim();
                     }
                     else
                     {
-                        Regex regex2 = new Regex(@"\w+\s\w+\s\w+");
-                        Match name = regex2.Match(line);
-
-                        Regex regex3 = new Regex(@"\w+");
-                        MatchCollection matchesName = regex3.Matches(name.Value);
+                        Regex regex = new Regex(@"\w+");
+                        MatchCollection matchesName = regex.Matches(superVisor);
                         initials = matchesName[0].Value + " " + (matchesName[1].Value).Substring(0, 1) + "." + (matchesName[2].Value).Substring(0, 1) + ".";
-
                     }
                     UpdateResponsableList(initials, isAppeal);
 

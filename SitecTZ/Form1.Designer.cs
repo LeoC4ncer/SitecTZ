@@ -173,7 +173,7 @@
             // labelNumberOfAppeals
             // 
             labelNumberOfAppeals.AutoSize = true;
-            labelNumberOfAppeals.Location = new Point(12, 616);
+            labelNumberOfAppeals.Location = new Point(87, 601);
             labelNumberOfAppeals.Name = "labelNumberOfAppeals";
             labelNumberOfAppeals.Size = new Size(12, 15);
             labelNumberOfAppeals.TabIndex = 7;
@@ -182,7 +182,7 @@
             // labelNumberOfRKK
             // 
             labelNumberOfRKK.AutoSize = true;
-            labelNumberOfRKK.Location = new Point(12, 716);
+            labelNumberOfRKK.Location = new Point(211, 701);
             labelNumberOfRKK.Name = "labelNumberOfRKK";
             labelNumberOfRKK.Size = new Size(12, 15);
             labelNumberOfRKK.TabIndex = 8;
@@ -191,7 +191,7 @@
             // labelNumberOfSummery
             // 
             labelNumberOfSummery.AutoSize = true;
-            labelNumberOfSummery.Location = new Point(12, 742);
+            labelNumberOfSummery.Location = new Point(87, 772);
             labelNumberOfSummery.Name = "labelNumberOfSummery";
             labelNumberOfSummery.Size = new Size(12, 15);
             labelNumberOfSummery.TabIndex = 10;
@@ -259,7 +259,7 @@
             // labelTimeOfRKK
             // 
             labelTimeOfRKK.AutoSize = true;
-            labelTimeOfRKK.Location = new Point(219, 772);
+            labelTimeOfRKK.Location = new Point(211, 727);
             labelTimeOfRKK.Name = "labelTimeOfRKK";
             labelTimeOfRKK.Size = new Size(12, 15);
             labelTimeOfRKK.TabIndex = 17;
